@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Login</title>
     <style>
         body {
-            background-image: url('BG2.webp'); /* Replace with your background image path */
+            background-image: url('assets/images/BG2.webp'); /* Replace with your background image path */
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -113,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
     <div class="login-container">
-        <img src="L.jpg" alt="Logo"> <!-- Logo image -->
+        <img src="assets/images/logo.png" alt="Logo"> <!-- Logo image -->
         <h2>Login</h2>
         <?php if ($error): ?>
             <div class="error"><?php echo $error; ?></div> <!-- Display error message -->

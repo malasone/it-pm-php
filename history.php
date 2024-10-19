@@ -58,6 +58,7 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
+<?php include 'header.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -116,31 +117,6 @@ $conn->close();
 <body>
 
 </div>
-<div class="sidebar p-3">
-        <h2>Welcome, <span id="user-name"><?php echo htmlspecialchars($_SESSION['username']); ?>!</span></h2>
-        <img src="logo.jpg" style="width:100px" class="center">
-            <div class="col-md-6 text-right">
-
-            </div>
-            <h3>Dashboard</h3>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="additem.php">Item List</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="history.php">Transactions History</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="dailysalereport.php">Sales Report</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="logout.php">Logout</a>
-                </li>
-            </ul>
-        </div>
 
 <div class="container">
     <h2>Order History</h2>

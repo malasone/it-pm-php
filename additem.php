@@ -70,6 +70,7 @@ $products = $conn->query("SELECT * FROM products");
 
 $conn->close();
 ?>
+<?php include 'header.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -77,65 +78,9 @@ $conn->close();
     <meta charset="UTF-8">
     <title>Manage Products</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #FFF4EA;
-            font-family: sans-serif;
-            margin: 0;
-        }
-        .sidebar {
-            height: 100vh;
-            width: 250px;
-            background-color: #AEDD7F;
-            color: white;
-            position: fixed;
-            top: 0;
-            left: 0;
-            padding-top: 20px;
-            overflow-y: auto;
-        }
-        .sidebar a {
-            color: white;
-        }
-        .sidebar a:hover {
-            background-color: #9cc672;
-        }
-        .sidebar img {
-            display: block;
-            margin: 0 auto 20px;
-        }
-        .container {
-            margin-left: 270px;
-            padding: 20px;
-        }
-        .table th, .table td {
-            vertical-align: middle;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/additem.css"></link>
 </head>
 <body>
-    <div class="sidebar p-3">
-        <h2>Welcome, <span id="user-name"><?php echo htmlspecialchars($_SESSION['username']); ?>!</span></h2>
-        <img src="logo.jpg" style="width:100px">
-        <h3>Dashboard</h3>
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link active" href="dashboard.php">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Item List</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="history.php">Transactions History</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="dailysalereport.php">Sales Report</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="logout.php">Logout</a>
-            </li>
-        </ul>
-    </div>
     <div class="container">
         <h1>Manage Products</h1>
 

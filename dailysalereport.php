@@ -69,6 +69,7 @@ if ($first_order_date && (strtotime($today) - strtotime($first_order_date)) >= 3
 
 $conn->close();
 ?>
+<?php include 'header.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -77,92 +78,10 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Sales Report</title>
-    <style>
-        table {
-            width: 50%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-
-        body {
-            background-color: #FFF4EA;
-            font-family: sans-serif;
-            margin: 0;
-        }
-        .sidebar {
-            height: 100vh;
-            width:250px;
-            background-color: #AEDD7F;
-            color: white;
-            position: fixed;
-            overflow-y: auto;
-        }
-        .sidebar a {
-            color: white;
-        }
-        .sidebar a:hover {
-            background-color: #9cc672;
-        }
-        
-        .sidebar img {
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 20px;
-        }
-
-        .container {
-            margin-right: 60px;
-            margin-top: 50px;  
-            margin-left: 300px; 
-            flex-grow: 1;
-        }
-
-        thead th {
-            position: sticky;
-            top: 0;
-            background-color: #f8f9fa; /* Background color for the header */
-            z-index: 10; /* Ensure the header is above other content */
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="assets/css/dailysalesreport.css"></link>
 </head>
 <body>
 <div class="d-flex">
-<div class="sidebar p-3">
-        <h2>Welcome, <span id="user-name"><?php echo htmlspecialchars($_SESSION['username']); ?>!</span></h2>
-        <img src="logo.jpg" style="width:100px">
-            <div class="col-md-6 text-right">
-
-            </div>
-            <h3>Dashboard</h3>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="dashboard.php">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="additem.php">Item List</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="history.php">Transactions History</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sales Report</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="logout.php">Logout</a>
-                </li>
-            </ul>
-        </div>
-
     <div class="container">
     <h2>Sales Report</h2>
     <table>

@@ -1,0 +1,70 @@
+body {
+    background-image: url('path/to/your/background.jpg'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.registration-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+}
+.registration-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box; /* Ensure padding is included in total width */
+}
+input::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Blue button color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.error {
+    background-color: #e74c3c; /* Red background for errors */
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.success {
+    background-color: #28a745; /* Green background for success */
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+p {
+    color: #fff; /* Text color for paragraph */
+}
+a {
+    color: #f1c40f; /* Link color */
+}
