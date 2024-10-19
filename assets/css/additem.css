@@ -1,0 +1,33 @@
+body {
+    background-color: #FFF4EA;
+    font-family: sans-serif;
+    margin: 0;
+}
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    background-color: #AEDD7F;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+.sidebar a {
+    color: white;
+}
+.sidebar a:hover {
+    background-color: #9cc672;
+}
+.sidebar img {
+    display: block;
+    margin: 0 auto 20px;
+}
+.container {
+    margin-left: 270px;
+    padding: 20px;
+}
+.table th, .table td {
+    vertical-align: middle;
+}

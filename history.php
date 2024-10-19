@@ -58,6 +58,7 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
+<?php include 'header.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -66,81 +67,11 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Order History</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #FFF4EA;
-            font-family: sans-serif;
-            margin: 0;
-        }
-        .sidebar {
-            height: 100vh;
-            width: 250px;
-            background-color: #AEDD7F;
-            color: white;
-            position: fixed;
-            top: 0;
-            left: 0;
-            overflow-y: auto;
-            padding-top: 20px;
-        }
-        .sidebar a {
-            color: white;
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-        }
-        .sidebar img {
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 20px;
-        }
-        .sidebar a:hover {
-            background-color: #9cc672;
-        }
-        .container {
-            margin-left: 270px;
-            padding: 20px;
-        }
-        .table th, .table td {
-            vertical-align: middle;
-            text-align: center;
-        }
-        thead th {
-            position: sticky;
-            top: 0;
-            background-color: #f8f9fa;
-            z-index: 10;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/history.css"></link>
 </head>
 <body>
 
 </div>
-<div class="sidebar p-3">
-        <h2>Welcome, <span id="user-name"><?php echo htmlspecialchars($_SESSION['username']); ?>!</span></h2>
-        <img src="logo.jpg" style="width:100px" class="center">
-            <div class="col-md-6 text-right">
-
-            </div>
-            <h3>Dashboard</h3>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="additem.php">Item List</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="history.php">Transactions History</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="dailysalereport.php">Sales Report</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="logout.php">Logout</a>
-                </li>
-            </ul>
-        </div>
 
 <div class="container">
     <h2>Order History</h2>
