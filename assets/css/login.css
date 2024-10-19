@@ -1,5 +1,6 @@
 body {
     background-image: url('../images/BG2.webp');
+    background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
@@ -8,7 +9,7 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.registration-container {
+.login-container {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 40px;
     border-radius: 10px;
@@ -18,9 +19,13 @@ body {
     text-align: center;
     color: #fff;
 }
-.registration-container h2 {
+.login-container img {
+    width: 100px; /* Adjust logo size */
+}
+h2 {
     margin-bottom: 20px;
     font-size: 24px;
+    color: #fff;
 }
 input[type="text"], input[type="password"] {
     width: 100%;
@@ -36,7 +41,7 @@ input::placeholder {
 button {
     width: 100%;
     padding: 12px;
-    background-color: #007bff; /* Blue button color */
+    background-color: #28a745;
     border: none;
     border-radius: 5px;
     color: white;
@@ -45,17 +50,10 @@ button {
     margin-top: 10px;
 }
 button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #218838; /* Darker green on hover */
 }
 .error {
     background-color: #e74c3c; /* Red background for errors */
-    color: white;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-.success {
-    background-color: #28a745; /* Green background for success */
     color: white;
     padding: 10px;
     margin: 10px 0;
@@ -66,7 +64,4 @@ p {
 }
 a {
     color: #f1c40f; /* Link color */
-}
-.registration-container img {
-    width: 100px; /* Adjust logo size */
 }

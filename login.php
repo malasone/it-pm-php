@@ -40,76 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <style>
-        body {
-            background-image: url('assets/images/BG2.webp'); /* Replace with your background image path */
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .login-container {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 40px;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 400px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-            text-align: center;
-            color: #fff;
-        }
-        .login-container img {
-            width: 100px; /* Adjust logo size */
-            margin-bottom: 20px;
-        }
-        h2 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            color: #fff;
-        }
-        input[type="text"], input[type="password"] {
-            width: 100%;
-            padding: 12px 15px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: none;
-            box-sizing: border-box; /* Ensure padding is included in total width */
-        }
-        input::placeholder {
-            color: #aaa; /* Placeholder color */
-        }
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #28a745;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        button:hover {
-            background-color: #218838; /* Darker green on hover */
-        }
-        .error {
-            background-color: #e74c3c; /* Red background for errors */
-            color: white;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-        }
-        p {
-            color: #fff; /* Text color for paragraph */
-        }
-        a {
-            color: #f1c40f; /* Link color */
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/login.css"></link>
 </head>
 <body>
     <div class="login-container">

@@ -67,52 +67,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Order History</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #FFF4EA;
-            font-family: sans-serif;
-            margin: 0;
-        }
-        .sidebar {
-            height: 100vh;
-            width: 250px;
-            background-color: #AEDD7F;
-            color: white;
-            position: fixed;
-            top: 0;
-            left: 0;
-            overflow-y: auto;
-            padding-top: 20px;
-        }
-        .sidebar a {
-            color: white;
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-        }
-        .sidebar img {
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 20px;
-        }
-        .sidebar a:hover {
-            background-color: #9cc672;
-        }
-        .container {
-            margin-left: 270px;
-            padding: 20px;
-        }
-        .table th, .table td {
-            vertical-align: middle;
-            text-align: center;
-        }
-        thead th {
-            position: sticky;
-            top: 0;
-            background-color: #f8f9fa;
-            z-index: 10;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/history.css"></link>
 </head>
 <body>
 
